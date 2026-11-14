@@ -9,7 +9,7 @@
  * Zolang dit leeg is, draait het formulier in demomodus en simuleert het een geslaagde inschrijving.
  */
 const MAILERLITE = {
-  action: "",
+  action: "https://assets.mailerlite.com/jsonp/2795236/forms/204112982232270581/subscribe",
 };
 
 document.documentElement.classList.add("js");
