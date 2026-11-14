@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meridian — Fris, waar je ook landt</title>
+  <meta name="description" content="Meridian is een lichte, ongecompliceerde cologne voor reizende professionals. Schrijf je in en hoor als eerste wanneer Meridian uitkomt.">
+  <meta name="theme-color" content="#F8F5EF">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/meridian-amber-balkon.jpg">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Naar de inhoud</a>
+
+  <!-- ============ NAVIGATIE ============ -->
+  <header class="nav" data-nav>
+    <div class="nav__island">
+      <a class="nav__logo" href="#top" aria-label="Meridian, terug naar boven">
+        <span class="nav__mark" aria-hidden="true"></span>
+        Meridian
+      </a>
+
+      <nav class="nav__links" aria-label="Hoofdmenu">
+        <a href="#verhaal">Verhaal</a>
+        <a href="#geur">Geur</a>
+        <a href="#collectie">Collectie</a>
+        <a href="#film">Film</a>
+      </nav>
+
+      <a class="nav__cta" href="#inschrijven">Inschrijven</a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu openen" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden data-menu>
+    <nav class="menu__inner" aria-label="Mobiel menu">
+      <a href="#verhaal" style="--i:0">Verhaal</a>
+      <a href="#geur" style="--i:1">Geur</a>
+      <a href="#collectie" style="--i:2">Collectie</a>
+      <a href="#film" style="--i:3">Film</a>
+      <a href="#inschrijven" style="--i:4">Inschrijven</a>
+      <p class="menu__meta" style="--i:5">Eau de Cologne · 50 ml</p>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__light" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal" style="--i:0">Binnenkort verkrijgbaar</p>
+          <h1 class="hero__title reveal" id="hero-title" style="--i:1">
+            Fris,<br>waar je<br>ook <span class="accent">landt.</span>
+          </h1>
+          <p class="hero__lede reveal" style="--i:2">
+            Meridian is een lichte, ongecompliceerde cologne voor wie altijd onderweg is.
+            Eén spray na de landing en je bent klaar voor de dag, in welke stad of tijdzone je ook wakker wordt.
+          </p>
+          <div class="hero__actions reveal" style="--i:3">
+            <a class="btn btn--primary" href="#inschrijven">
+              <span>Schrijf je in voor de lancering</span>
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a class="link-quiet" href="#verhaal">Ontdek Meridian</a>
+          </div>
+        </div>
+
+        <figure class="hero__visual reveal reveal--soft" style="--i:2" data-tilt>
+          <div class="bezel">
+            <div class="bezel__core media media--hero">
+              <img src="assets/meridian-amber-balkon.jpg" alt="Een flacon Meridian Amber op een balkontafel, met de zon boven zee" width="1400" height="1400" fetchpriority="high" data-fallback>
+            </div>
+          </div>
+          <figcaption class="hero__caption">
+            <span>Meridian Amber</span>
+            <span>Eau de Cologne · 50 ml</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <a class="scroll-cue" href="#verhaal" aria-label="Scroll naar ons verhaal">
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+        Scroll
+      </a>
+    </section>
+
+    <!-- ============ 2. ONS VERHAAL ============ -->
+    <section class="section story" id="verhaal" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <figure class="story__visual reveal reveal--clip">
+          <div class="media media--story" style="aspect-ratio:4/5">
+            <img src="assets/meridian-amber-duo.jpg" alt="Twee flacons Meridian Amber naast elkaar op een zonnige balkontafel, met de dop ernaast" loading="lazy" width="1400" height="1400" data-fallback>
+          </div>
+        </figure>
+
+        <div class="story__copy">
+          <p class="eyebrow reveal">01 — Ons verhaal</p>
+          <h2 class="h2 reveal" id="story-title">Een lijn die overal onder je voeten loopt.</h2>
+          <div class="prose">
+            <p class="reveal">
+              Een meridiaan is een denkbeeldige lijn van pool tot pool. Waar je ook staat op de wereld,
+              er loopt er één onder je voeten. Zo zien wij een goede geur: iets wat altijd meegaat en overal klopt.
+            </p>
+            <p class="reveal">
+              Meridian is gemaakt voor reizende professionals. Mensen die 's ochtends een vlucht halen,
+              's middags pitchen en 's avonds in een andere stad dineren. Je hebt geen tijd om na te denken over
+              welke geur bij welk moment past. Daarom houden we het eenvoudig: een frisse, luchtige cologne die je
+              zonder twijfel draagt in de vergaderzaal, op de luchthaven en op het terras.
+            </p>
+            <p class="reveal">
+              Geen ingewikkelde rituelen, geen zware wolk die de lift vult. Gewoon een heldere geur die naar zon
+              en open lucht ruikt, in een flacon van 50 ml die in je handbagage past.
+            </p>
+          </div>
+
+          <dl class="facts">
+            <div class="facts__item reveal" style="--i:0">
+              <dt>50 ml</dt>
+              <dd>Past in je handbagage</dd>
+            </div>
+            <div class="facts__item reveal" style="--i:1">
+              <dt>4</dt>
+              <dd>Karakters, één frisse basis</dd>
+            </div>
+            <div class="facts__item reveal" style="--i:2">
+              <dt>24/7</dt>
+              <dd>Van vergaderzaal tot terras</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. GEURBELEVING ============ -->
+    <section class="section scent" id="geur" aria-labelledby="scent-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow reveal">02 — De geur</p>
+          <h2 class="h2 reveal" id="scent-title">Eerst zonlicht. <span class="muted">Daarna de hele dag rust.</span></h2>
+          <p class="section-head__lede reveal">
+            Elke Meridian deelt dezelfde frisse basis. Hij opent helder, wordt groen en schoon,
+            en droogt op tot warm hout dat dicht bij je huid blijft.
+          </p>
+        </header>
+
+        <ol class="notes">
+          <li class="note note--top reveal" style="--i:0">
+            <div class="bezel">
+              <article class="bezel__core note__core">
+                <div class="note__head">
+                  <span class="note__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="8"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11.3 11.3l4.2 4.2M32.5 32.5l4.2 4.2M11.3 36.7l4.2-4.2M32.5 15.5l4.2-4.2"/></svg>
+                  </span>
+                  <span class="note__phase">Topnoot · eerste 15 min</span>
+                </div>
+                <h3 class="note__title">Citrusnoten</h3>
+                <p class="note__text">De eerste ademhaling. Helder en sprankelend, alsof je de gordijnen opentrekt in een kamer met uitzicht.</p>
+                <ul class="note__tags" aria-label="Ingrediënten">
+                  <li>Bergamot</li><li>Yuzu</li><li>Roze grapefruit</li>
+                </ul>
+              </article>
+            </div>
+          </li>
+
+          <li class="note note--heart reveal" style="--i:1">
+            <div class="bezel">
+              <article class="bezel__core note__core">
+                <div class="note__head">
+                  <span class="note__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><path d="M24 42V14"/><path d="M24 22c-6 0-10-4-10-10 6 0 10 4 10 10Z"/><path d="M24 30c6 0 10-4 10-10-6 0-10 4-10 10Z"/><path d="M24 14c-2-3-2-6 0-9 2 3 2 6 0 9Z"/></svg>
+                  </span>
+                  <span class="note__phase">Hart · 2 uur</span>
+                </div>
+                <h3 class="note__title">Frisse aromatische accenten</h3>
+                <p class="note__text">Groen en kruidig. Het deel dat je rustig houdt tijdens een middag vol calls.</p>
+                <ul class="note__tags" aria-label="Ingrediënten">
+                  <li>Salie</li><li>Rozemarijn</li><li>Petitgrain</li>
+                </ul>
+              </article>
+            </div>
+          </li>
+
+          <li class="note note--base reveal" style="--i:2">
+            <div class="bezel">
+              <article class="bezel__core note__core">
+                <div class="note__head">
+                  <span class="note__icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="11"/><circle cx="24" cy="24" r="5"/></svg>
+                  </span>
+                  <span class="note__phase">Basis · de hele dag</span>
+                </div>
+                <h3 class="note__title">Moderne houtachtige basis</h3>
+                <p class="note__text">Droog, warm en stil. Nog steeds aanwezig als je 's avonds incheckt, zonder ooit te overheersen.</p>
+                <ul class="note__tags" aria-label="Ingrediënten">
+                  <li>Ceder</li><li>Vetiver</li><li>Witte musk</li>
+                </ul>
+              </article>
+            </div>
+          </li>
+        </ol>
+
+        <div class="timeline reveal" aria-hidden="true">
+          <span>06:40 · Gate B12</span>
+          <span class="timeline__track"><span class="timeline__fill"></span></span>
+          <span>21:15 · Check-in</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. DE COLLECTIE ============ -->
+    <section class="section collection" id="collectie" aria-labelledby="collection-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal">03 — De collectie</p>
+            <h2 class="h2 reveal" id="collection-title">Vier karakters, één frisse basis.</h2>
+          </div>
+          <p class="section-head__lede reveal">
+            Kies de geur die past bij jouw manier van reizen.
+          </p>
+        </header>
+
+        <div class="collection__grid">
+          <figure class="collection__visual reveal reveal--clip">
+            <div class="media" style="aspect-ratio:1/1">
+              <img src="assets/meridian-iris-balkon.jpg" alt="Een flacon Meridian Iris op een balkontafel bij zonsondergang" loading="lazy" width="1400" height="1400" data-fallback>
+            </div>
+            <figcaption class="shot-caption"><span>Kamer 704, 19:20</span><span>Meridian Iris</span></figcaption>
+          </figure>
+
+          <ul class="scents">
+            <li class="scent-row reveal" style="--i:0; --tone:#c98a3a">
+              <span class="scent-row__swatch" aria-hidden="true"></span>
+              <div>
+                <h3 class="scent-row__name">Amber</h3>
+                <p class="scent-row__mood">Warm en zonnig</p>
+              </div>
+              <p class="scent-row__text">Amber, vanille en sandelhout maken van elke hotelkamer even thuis.</p>
+            </li>
+            <li class="scent-row reveal" style="--i:1; --tone:#8f9c6c">
+              <span class="scent-row__swatch" aria-hidden="true"></span>
+              <div>
+                <h3 class="scent-row__name">Sage</h3>
+                <p class="scent-row__mood">Fris en groen</p>
+              </div>
+              <p class="scent-row__text">Salie, bergamot en vetiver voor een heldere start na een nachtvlucht.</p>
+            </li>
+            <li class="scent-row reveal" style="--i:2; --tone:hsl(265 32% 58%)">
+              <span class="scent-row__swatch" aria-hidden="true"></span>
+              <div>
+                <h3 class="scent-row__name">Iris</h3>
+                <p class="scent-row__mood">Zacht en verfijnd</p>
+              </div>
+              <p class="scent-row__text">Iris, viooltje en witte musk, subtiel genoeg voor elke vergaderzaal.</p>
+            </li>
+            <li class="scent-row reveal" style="--i:3; --tone:#2a2430">
+              <span class="scent-row__swatch" aria-hidden="true"></span>
+              <div>
+                <h3 class="scent-row__name">Noir</h3>
+                <p class="scent-row__mood">Kruidig en zelfzeker</p>
+              </div>
+              <p class="scent-row__text">Zwarte peper en leer voor de afspraak die telt.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. FILM ============ -->
+    <section class="section film" id="film" aria-labelledby="film-title">
+      <div class="container film__grid">
+        <div class="film__copy">
+          <p class="eyebrow reveal">04 — De film</p>
+          <h2 class="h2 reveal" id="film-title">Tien seconden zon, zee en Meridian Amber.</h2>
+          <p class="section-head__lede reveal">
+            Gouden uur op een hotelbalkon. Zo ruikt een reisdag die goed eindigt.
+          </p>
+        </div>
+
+        <figure class="film__visual reveal reveal--soft">
+          <div class="bezel">
+            <div class="bezel__core media media--film">
+              <video class="film__video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-label="Een flacon Meridian Amber op een zonnig hotelbalkon boven zee" data-film>
+                <source src="assets/meridian-film-mobile.mp4" type="video/mp4" media="(max-width: 860px)">
+                <source src="assets/meridian-film.mp4" type="video/mp4">
+              </video>
+              <button class="video-toggle" type="button" aria-label="Film pauzeren" data-video-toggle>
+                <svg class="video-toggle__pause" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <svg class="video-toggle__play" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M5 3.5v9l7.5-4.5z" fill="currentColor"/></svg>
+              </button>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 6. CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta__panel reveal reveal--soft">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <p class="eyebrow eyebrow--light">De eerste editie</p>
+          <h2 class="cta__title" id="cta-title">Je volgende vertrek<br>verdient een signatuur.</h2>
+          <p class="cta__text">
+            Meridian komt binnenkort uit. Schrijf je in, hoor als eerste de lanceringsdatum
+            en ontvang een gratis staaltje van je favoriete geur.
+          </p>
+          <a class="btn btn--light" href="#inschrijven">
+            <span>Join The Journey</span>
+            <span class="btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. NIEUWSBRIEF ============ -->
+    <section class="section newsletter" id="inschrijven" aria-labelledby="newsletter-title">
+      <div class="container newsletter__grid">
+        <div class="newsletter__copy">
+          <p class="eyebrow reveal">05 — Nieuwsbrief</p>
+          <h2 class="h2 reveal" id="newsletter-title">Word als eerste op de hoogte.</h2>
+          <p class="section-head__lede reveal">
+            Meridian komt binnenkort uit. Schrijf je in en ontvang als eerste de lanceringsdatum
+            en een gratis staaltje van je favoriete geur, zodat je hem op je volgende reis kunt testen.
+          </p>
+          <ul class="perks">
+            <li class="reveal" style="--i:0">Als eerste de lanceringsdatum</li>
+            <li class="reveal" style="--i:1">Een gratis staaltje van je favoriete geur</li>
+            <li class="reveal" style="--i:2">Op elk moment uitschrijven</li>
+          </ul>
+        </div>
+
+        <div class="bezel newsletter__bezel reveal reveal--soft">
+          <div class="bezel__core newsletter__card">
+            <!--
+              Klaar voor MailerLite:
+              zet MAILERLITE.action in script.js op de URL van je ingebedde formulier
+              (https://assets.mailerlite.com/jsonp/{ACCOUNT_ID}/forms/{FORM_ID}/subscribe).
+              De veldnamen volgen de conventie van MailerLite. Gebruik je in MailerLite
+              "marketing permissions", vervang dan de name van het opt-in-vakje door de naam
+              die MailerLite in de embed-code geeft (bv. gdpr[]).
+            -->
+            <form class="form" data-newsletter novalidate>
+              <div class="field">
+                <label for="nl-name">Voornaam</label>
+                <input id="nl-name" name="fields[name]" type="text" autocomplete="given-name" placeholder="Je voornaam" required>
+                <p class="field__error" aria-live="polite"></p>
+              </div>
+              <div class="field">
+                <label for="nl-email">E-mailadres</label>
+                <input id="nl-email" name="fields[email]" type="email" autocomplete="email" inputmode="email" placeholder="naam@bedrijf.be" required>
+                <p class="field__error" aria-live="polite"></p>
+              </div>
+              <div class="field field--check">
+                <label class="check" for="nl-optin">
+                  <input id="nl-optin" name="fields[optin]" type="checkbox" value="ja" required>
+                  <span class="check__box" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="12" height="12"><path d="m3.5 8.5 3 3 6-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  <span class="check__text">Ja, ik wil e-mails van Meridian ontvangen over de lancering en nieuwe geuren. Ik kan me op elk moment uitschrijven.</span>
+                </label>
+                <p class="field__error" aria-live="polite"></p>
+              </div>
+              <input type="hidden" name="ml-submit" value="1">
+              <input type="hidden" name="anticsrf" value="true">
+              <!-- honeypot -->
+              <input class="visually-hidden" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+              <button class="btn btn--primary btn--block" type="submit">
+                <span class="btn__label">Schrijf me in</span>
+                <span class="btn__icon" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" width="14" height="14"><path d="M4 12 12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+              </button>
+              <p class="form__status" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="success" hidden data-success tabindex="-1">
+              <span class="success__mark" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="21"/><path d="m15 24.5 6 6 12-13"/></svg>
+              </span>
+              <h3 class="success__title">Bedankt<span data-success-name></span>!</h3>
+              <p class="success__text">Check je inbox voor je welkomstmail.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a class="nav__logo" href="#top"><span class="nav__mark" aria-hidden="true"></span>Meridian</a>
+        <p class="footer__line">Fris, waar je ook landt.</p>
+      </div>
+      <p class="footer__meta">
+        Een fictief merk, gemaakt voor een schoolopdracht Creative Automation.<br>
+        Beelden en video zijn gemaakt met AI. © <span data-year>2026</span>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
